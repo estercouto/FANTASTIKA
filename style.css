@@ -30,7 +30,7 @@ header nav{
     align-items: center;
     margin-left: 40%; 
 }
-.section1{
+.FirstSection{
    background-color: #FC6392;
     height: 74vh;
     width: 100%;
@@ -40,18 +40,18 @@ header nav{
     align-items: center;
    
 }
- .section1 h1{
+ .FirstSection h1{
     color: #ffffff;
     font-size: 51px;
-    height: 27vh;
+    height: 14vh;
     width: 28vw;
     text-align: center;
     position: relative;
-    top: 70px;
+    bottom:1vh;
     font-family: 'Roboto Serif', serif;
     font-weight: bolder;
  }
- .texto1{
+ .OneText{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -59,13 +59,16 @@ header nav{
  .imgFundo{
     background-image: url(cachorro\ 1.png);
      background-position: center bottom; 
-    /* background-size: 100% 100%; */
-    width: 50vw;
     height: 74vh;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom:14vh;
  }
 
-.section2{
+.SecondSection{
     background-image:url(cachorro2.jpeg);
     height: 80vh;
     background-repeat: no-repeat;
@@ -75,7 +78,7 @@ header nav{
     align-items: center;
     justify-content: center;
 }
-.texto2{
+.TwoText{
     display: flex;
     flex-direction: column;
     width: 35vw;
@@ -83,15 +86,13 @@ header nav{
     position: absolute;
     right: 43%;
     justify-content: space-between;
-    border: #252525 1px solid;
 }
-.texto2 h2{
+.TwoText h2{
     color: #3A342F;
     font-size: 49px;
     font-family: 'Roboto Serif', serif;
-    border: #252525 1px solid;
 }
-.texto2 p{
+.TwoText p{
     color: #3A342F;
     height:22vh;
     width: 25vw;
@@ -100,21 +101,20 @@ header nav{
     max-width: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    border: #252525 1px solid;
 }
-.texto2 button{
+.TwoText button{
     background-color: #3A342F;
     color: #ffffff;
     width: 13vw;
     border-radius: 50px;
-    padding: 20px 5px;
+    height: 7vh;
     font-size: 27px;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
     border: none;
 }
 
-.section3{
+.ThirdSection{
     height:80vh;
     width: 100%;
     display: flex;
@@ -122,12 +122,12 @@ header nav{
     justify-content: space-between;
     background-color: #E54979;
 }
-.section3 figure img{
+.ThirdSection figure img{
      position: relative;
      top: 16px;  
      width: 22.75vw; 
 }
-.texto3{
+.ThreeText{
     display: flex;
     flex-direction: column;
     width: 25vw;
@@ -135,15 +135,13 @@ header nav{
     position: absolute;
     left: 50%;
     justify-content: space-between;
-    border: #252525 1px solid;
 }
-.texto3 h2{
+.ThreeText h2{
     color: black;
     font-size: 49px;
     font-family: 'Roboto Serif', serif;
-    border: #252525 1px solid;
 }
-.texto3 p{
+.ThreeText p{
     color: black;
     height:22vh;
     width: 25vw;
@@ -151,14 +149,13 @@ header nav{
     font-size: 1.5vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    border: #252525 1px solid;
 }
-.texto3 button{
+.ThreeText button{
     background-color:#ffffff;
     color: black;
     width: 13vw;
     border-radius: 50px;
-    padding: 20px 5px;
+    height: 7vh;
     font-size: 27px;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
@@ -229,28 +226,59 @@ footer h3{
     
 }
 @media(min-width:201px) and (max-width: 500px){
-    .texto1, .texto2, .texto3{
+    .YoutubeIcon, .InstagranIcon{
+        display: none;
+    }
+    .FirstSection h1{
+        font-size: 7vw;
+    }
+    .ThreeText h2{
+        font-size: 5vw;
+        width: 100%;
+    }
+    .ThreeText p{
+        font-size: 4vw;
+        width: 48vw;
+    }
+    .FirstSection .imgFundo{
+        width: 100vw; 
+        height: 73vh;
+    }
+    .SecondSection{
+        background-image: url(dog2\ mobile.jpeg) 100%; 
+        background-color: none;
+    }
+    .TwoText {
+        width: 50%;
+        height: 30%;   
+    }
+    .TwoText h2{ 
+        width: 100%;
+        font-size: 6vw;
+    }
+    .TwoText p{
+        width: 100%;
+        font-size: 4vw;
+        height: 35%;
+    }
+    .TwoText button{
+        font-size: 12px;
+        width: 35vw;
+        height: 5vh;
+        
+    }
+    .OneText{
+        display: flex;
+        align-items:flex-start ;
+    }
+   
+    .ThreeText button{
+        font-size: 12px;
+        width: 35vw;
+        height: 5vh;
+    }
+    footer h3{
         font-size: 10px;
-    }
-    
-    header{
-        border:yellow 1px solid;
-        width: 100vw;
-    }
-    .section1{
-        background-image:none;    
-    }
-    .section1 .imgFundo{
-        width: 55vh;
-    }
-    .section2{
-        background-color: none;   
-    }
-    .section3{
-        background-image:none;
-    }
-    .section3 figure img{
-        width:55vw;
     }
     .apoio{
         flex-direction: column;
@@ -276,6 +304,19 @@ footer h3{
 h3{
     text-align: center;
 }
+.FirstSection h1 {
+    position: relative;
+    top:15px;
+    width: 80%;
+    height: 10vh;
+    }
+    .imgFundo{
+    display: flex;
+    justify-content: flex-start;
+    }
+   
+    
+   
 } 
 
 
