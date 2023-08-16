@@ -130,6 +130,7 @@ header nav{
 .ThreeText{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 25vw;
     height: 48vh;
     position: absolute;
@@ -168,7 +169,9 @@ header nav{
     align-items: center;
     justify-content: space-around;
     height: 7vw;
+   
 }
+
 .apoio img{
    width: 15vw;
 }
@@ -184,27 +187,14 @@ footer{
     gap: 50px;
     text-transform: capitalize;
 }
-.atendimento{
+.atendimento, .sobre, .unidades {
       height:20vh;
       width: 10vw;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
 }
-.sobre{
-    height:20vh;
-    width: 10vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.unidades{
-    height:20vh;
-    width: 10vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
+
 .conteinerFooter{
     height: 30vh;
     width: 70vw;
@@ -229,16 +219,40 @@ footer h3{
     .YoutubeIcon, .InstagranIcon{
         display: none;
     }
+    .FirstSection{
+        justify-content: flex-end;
+    }
     .FirstSection h1{
         font-size: 7vw;
     }
-    .ThreeText h2{
-        font-size: 5vw;
+    header{
+        justify-content:space-between;
         width: 100%;
+    }
+    header nav{
+        justify-content: flex-end;
+        margin-left: 0%; 
+        width: 20vw;
+    }
+    .menu{
+        width:50vw;
+    }
+   
+    .ThreeText{
+        height: 28vh;
+        width: 60%;
+        position: static;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 30px 0 0 30px;
+    }
+    .ThreeText h2{
+        font-size: 20px;
     }
     .ThreeText p{
         font-size: 4vw;
         width: 48vw;
+        height: 13vh;
     }
     .FirstSection .imgFundo{
         width: 100vw; 
@@ -247,10 +261,13 @@ footer h3{
     .SecondSection{
         background-image: url(dog2\ mobile.jpeg) 100%; 
         background-color: none;
+        background-position: bottom center;
+        background-size: 100%;
     }
     .TwoText {
         width: 50%;
-        height: 30%;   
+        height: 30vh;  
+        justify-content: space-evenly;  
     }
     .TwoText h2{ 
         width: 100%;
@@ -271,39 +288,69 @@ footer h3{
         display: flex;
         align-items:flex-start ;
     }
-   
+    .ThirdSection{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .ThirdSection figure img{
+        height: 38vh;
+        width: 100%;   
+        position: static;
+    }
+    .ThirdSection figure{
+        height: 38vh;
+    }
     .ThreeText button{
         font-size: 12px;
         width: 35vw;
         height: 5vh;
     }
     footer h3{
-        font-size: 10px;
+      text-align: center;
+      font-size: 2vh;    
     }
     .apoio{
-        flex-direction: column;
-        align-items: space-between;
+        height: 5vh;
     }
+    .apoio img{
+        height: 3vh;
+        width: 20vw;
+    }
+    
+    .apoio i{
+        font-size: 15px;
+        order:2;
+        margin-bottom: 13px;
+    }
+    .Havaianas {
+        order: 1;
+    }
+    .Americanas {
+        order: 3;
+    }
+    
     footer{
-        flex-direction: column;
-        height: 60vh;
+        flex-direction: column;  
+        height: 70vh;
         width: 100%;
     }
     .conteinerFooter{
         flex-direction: column;
-        height: 50vh;
+        height: 70vh;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
     }
     footer li{ 
         font-size: 15px;
-        text-align: center;
 }
-.atendimento{
-    height:15vh;
-    width: 8vw;
+.atendimento, .sobre, .unidades{
+    height:5vh;
+    width: 50vw;
 }
-h3{
-    text-align: center;
-}
+
 .FirstSection h1 {
     position: relative;
     top:15px;
@@ -314,9 +361,6 @@ h3{
     display: flex;
     justify-content: flex-start;
     }
-   
-    
-   
 } 
 
 
